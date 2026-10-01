@@ -1,0 +1,8 @@
+# GitHub Pages runs Jekyll on this repo. The site is plain HTML, so this file only keeps
+# the project's own docs and tooling files off the published site.
+exclude:
+  - AGENTS.md
+  - CLAUDE.md
+  - README.md
+  - lefthook.yml
+  - docs/

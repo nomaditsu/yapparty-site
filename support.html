@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support · YapParty</title>
+  <meta name="description" content="Getting started, requirements, FAQ and contact for YapParty on macOS." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="./"><img class="logo" src="assets/yapparty-logo.png" alt="" width="30" height="30" /> YapParty</a>
+      <div class="nav-links"><a href="privacy.html">Privacy</a></div>
+    </nav>
+
+    <article class="doc">
+      <h1>Support</h1>
+      <p class="updated">YapParty is voice chat for macOS that talks to the LLM you run yourself. Here is how to get going and how to reach us.</p>
+
+      <h2>Getting started</h2>
+      <ol>
+        <li><strong>Install a local LLM server.</strong> <a href="https://lmstudio.ai" target="_blank" rel="noopener">LM Studio</a> and <a href="https://ollama.com" target="_blank" rel="noopener">Ollama</a> are both free. Any OpenAI-compatible server also works.</li>
+        <li><strong>Load a model</strong> in it and make sure its local server is running. YapParty looks for LM Studio at <code>localhost:1234</code> and Ollama at <code>localhost:11434</code>.</li>
+        <li><strong>Open YapParty</strong> and pick your server and model.</li>
+        <li><strong>Allow the microphone</strong> when macOS asks.</li>
+        <li><strong>Wait for the one-time voice setup.</strong> YapParty asks before it downloads about 1.6 GB of speech models from Hugging Face. After that, it starts right away.</li>
+        <li><strong>Talk.</strong> Hold the talk button, or turn on hands-free and just speak.</li>
+      </ol>
+
+      <h2>Requirements</h2>
+      <ul>
+        <li>macOS 15 (Sequoia) or later</li>
+        <li>An Apple Silicon Mac (M1 or later)</li>
+        <li>A local LLM server: LM Studio, Ollama, or any OpenAI-compatible server</li>
+        <li>About 1.6 GB of free disk space for the speech models, plus 2 to 4 GB for each voice-clone engine if you use Pro</li>
+      </ul>
+
+      <h2>FAQ</h2>
+      <h3>Is YapParty free?</h3>
+      <p>Yes. The voice chat app is free. A one-time Pro unlock adds voice cloning. The price will be announced at launch.</p>
+
+      <h3>Do I need an internet connection?</h3>
+      <p>Only for the one-time model download, and if your LLM server is on another computer or online. With models downloaded and a server on your Mac, YapParty works offline.</p>
+
+      <h3>YapParty can't reach my model. What do I check?</h3>
+      <p>Make sure LM Studio or Ollama is open, a model is loaded, and its local server is running. Then check that the server address in YapParty's settings matches it.</p>
+
+      <h3>The microphone isn't working.</h3>
+      <p>Open System Settings › Privacy &amp; Security › Microphone and turn on YapParty. YapParty shows an Open Privacy Settings button when access is off.</p>
+
+      <h3>Is my voice uploaded anywhere?</h3>
+      <p>No. Speech is transcribed on your Mac, and replies are spoken on your Mac. Microphone audio is kept in memory and never saved to disk. Only the text of your chat goes to the LLM server you choose.</p>
+
+      <h3>Where are my transcripts?</h3>
+      <p>On your Mac, inside YapParty's own app container. You can browse, search, rename and delete them in the app.</p>
+
+      <h3>Can I clone someone else's voice?</h3>
+      <p>Only with their permission. Voice cloning (Pro) is for your own voice, or a voice whose speaker has agreed. YapParty asks you to confirm this before it saves a clone.</p>
+
+      <h3>Does it run on an Intel Mac?</h3>
+      <p>No. The on-device speech models need Apple Silicon.</p>
+
+      <h2>Contact</h2>
+      <!-- TODO(contact-email): replace with the real support address and a mailto link -->
+      <p>Email <span class="todo">contact email TBD</span> and we will help as soon as we can.</p>
+
+      <h2>Privacy</h2>
+      <p>See the <a href="privacy.html">YapParty Privacy Policy</a>.</p>
+
+      <a class="back" href="./">← Back to YapParty</a>
+    </article>
+  </div>
+</body>
+</html>

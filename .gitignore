@@ -1,0 +1,3 @@
+# Local dev tooling (preview server config) is not part of the published site
+.claude/
+.DS_Store
