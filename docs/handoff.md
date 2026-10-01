@@ -14,12 +14,12 @@ A snapshot, not a log. OVERWRITE it every session. NEVER append. Keep it under 6
 First version of the site. No plan file: the scope is the three pages, mirrored from cutparty-site.
 
 ## What is live
-Target: `https://cutparty.com/yapparty/`, served from `cutparty-site` through a submodule
-([decision 0001](decisions/0001-host-at-cutparty-com-yapparty.md)). Ray approved publishing on
-2026-10-02.
+`https://cutparty.com/yapparty/` (also `/yapparty/support`, `/yapparty/privacy`), verified 2026-10-02.
+Source `nomaditsu/yapparty-site` at `f35e8ed`, mounted in `nomaditsu/cutparty-site` at `43d0f2e`
+([decision 0001](decisions/0001-host-at-cutparty-com-yapparty.md)). The repo's docs return 404 there.
 
 ## What is on a branch, not merged
-None once this branch merges. Previewed at desktop width and 375 px.
+Nothing.
 
 ## Next action
 Point the app's `AppLinks` (`~/dev/tokee/Sources/Tokee/AboutView.swift`) at

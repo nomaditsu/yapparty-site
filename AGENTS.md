@@ -1,4 +1,4 @@
-# yapparty.app: project brief
+# YapParty site (cutparty.com/yapparty): project brief
 
 Loaded by every AI coding agent after Ray's global constitution
 (`~/dev/clarvis/constitution/AGENTS.md`). If your tool did not load that file on its own,
@@ -6,7 +6,7 @@ read it now, before anything else. This file adds what is specific to this repo.
 `CLAUDE.md` is one line that imports this file, so there is a single source.
 
 ## Project
-yapparty.app (no project code of its own; it is the site for YapParty, code **TOKEE**) is the
+The YapParty site (no project code of its own; it is the site for YapParty, code **TOKEE**) is the
 public marketing site for YapParty, a macOS voice chat app: a one-pager, a support page and a
 privacy policy. Static HTML/CSS with no build step. Source is the public repo
 `nomaditsu/yapparty-site`; it is served at `https://cutparty.com/yapparty/` because
@@ -18,7 +18,7 @@ Status: active, pre-launch (the app is not on sale yet).
 Family: voice. Local voice chat with on-device speech
 
 - `~/dev/tokee` (site-for): YapParty (code TOKEE), the macOS app this site sells
-- `~/dev/cutparty-site` (sibling): same static structure, tone and components, mirrored from it
+- `~/dev/cutparty-site` (sibling): mirrored from it; it mounts this repo as a submodule at yapparty/ to serve cutparty.com/yapparty
 - `~/dev/tokee` (Tokee) lists this repo as site-for: yapparty.app marketing site
 
 Full portfolio map: `~/dev/PROJECTS.md`.
