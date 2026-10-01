@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy · YapParty</title>
+  <meta name="description" content="YapParty transcribes and speaks on your Mac, keeps transcripts on your Mac, and collects no data." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="./"><img class="logo" src="assets/yapparty-logo.png" alt="" width="30" height="30" /> YapParty</a>
+      <div class="nav-links"><a href="support.html">Support</a></div>
+    </nav>
+
+    <!-- Keep in step with the app: Settings › About privacy text (Sources/Tokee/AboutView.swift)
+         and Resources/PrivacyInfo.xcprivacy in the YapParty repo. -->
+    <article class="doc">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: October 1, 2026</p>
+
+      <p>YapParty is a macOS app for talking out loud with a language model you run yourself. It does its speech work on your Mac and keeps your conversations there.</p>
+
+      <h2>What we collect</h2>
+      <p><strong>Nothing.</strong> YapParty does not collect any personal data. There is no account, no sign-in, no analytics, no telemetry, no tracking, no advertising and no third-party data SDKs. YapParty does not send crash reports or usage data to us.</p>
+
+      <h2>Your voice</h2>
+      <ul>
+        <li>YapParty uses the microphone only after you give permission in macOS.</li>
+        <li>Your speech is transcribed on your Mac. Microphone audio is kept in memory while it is transcribed and is never written to disk.</li>
+        <li>Replies are spoken by voices that run on your Mac.</li>
+      </ul>
+
+      <h2>Your conversations</h2>
+      <p>Transcripts are stored only on your Mac, as files inside YapParty's own app container. You can rename and delete them in the app. They are never sent to us.</p>
+
+      <h2>When YapParty uses the network</h2>
+      <p>The network is used for two things:</p>
+      <ol>
+        <li><strong>Talking to the LLM server you choose.</strong> The text of your chat is sent to that server so your model can reply. With LM Studio or Ollama on the same Mac, this stays on your Mac.</li>
+        <li><strong>Downloading speech and voice models from Hugging Face.</strong> YapParty asks before it downloads. Like any download, the request reaches Hugging Face's servers, which see standard request details such as your IP address. No chat content or audio is sent.</li>
+      </ol>
+      <p class="note">If you point YapParty at a server on another computer or online, your chat messages go to that server, and the privacy practices of whoever runs it apply. YapParty shows a notice when the server you choose is not on your Mac.</p>
+
+      <h2>API keys</h2>
+      <p>If your server needs an API key, YapParty stores it in the macOS Keychain and sends it only to the server you configured.</p>
+
+      <h2>Voice cloning (Pro)</h2>
+      <p>Voice cloning works from a short reference recording. Reference recordings, their transcripts and the date you confirmed permission stay on your Mac, inside YapParty's app container. They are never uploaded. Clone only your own voice, or a voice whose speaker has given permission. YapParty asks you to confirm this before it saves a clone.</p>
+
+      <h2>Purchases</h2>
+      <p>Purchasing is not available yet. When it becomes available, Pro will be sold through Lemon Squeezy, which acts as the merchant of record and handles payment. We never see or store your card details. To activate or check a Pro license, YapParty will contact Lemon Squeezy's license service with your license key and a device name. Lemon Squeezy's own privacy policy covers the data it handles.</p>
+
+      <h2>Children</h2>
+      <p>YapParty does not collect data from anyone, including children.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the updated version will be posted on this page with a new date.</p>
+
+      <h2>Contact</h2>
+      <!-- TODO(contact-email): replace with the real support address and a mailto link -->
+      <p>Questions about privacy? Email <span class="todo">contact email TBD</span>.</p>
+
+      <a class="back" href="./">← Back to YapParty</a>
+    </article>
+  </div>
+</body>
+</html>

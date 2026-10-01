@@ -1,0 +1,13 @@
+# clarvis commit gate. Install once per clone:  lefthook install
+# Source template: ~/dev/clarvis/templates/lefthook.yml
+pre-commit:
+  commands:
+    protected-strings:
+      priority: 1
+      run: gitleaks protect --staged --no-banner --redact --config ~/.clarvis/private/guards/gitleaks.toml
+    docs-index:
+      priority: 2
+      run: ~/dev/clarvis/scripts/clarvis index --repo . --stage
+    docs-lint:
+      priority: 3
+      run: ~/dev/clarvis/scripts/clarvis lint --repo . --staged-only

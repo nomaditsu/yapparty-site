@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YapParty: private voice chat with your local AI, for Mac</title>
+  <meta name="description" content="YapParty is private, offline voice chat for macOS. Talk out loud with the LLM you already run in LM Studio, Ollama or any OpenAI-compatible server. Speech recognition and voices run on your Mac. Free, no account." />
+  <meta property="og:title" content="YapParty: private voice chat for Mac" />
+  <meta property="og:description" content="Talk out loud with your local AI. Speech-to-text and text-to-speech run on your Mac. Free, offline, no account." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"></div>
+  <div class="confetti" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <div class="wrap">
+      <nav class="nav">
+        <a class="brand" href="./"><img class="logo party" src="assets/yapparty-logo.png" alt="" width="30" height="30" /> YapParty</a>
+        <div class="nav-links">
+          <a href="#how">How it works</a>
+          <a href="#features">Features</a>
+          <a href="#pro">Pro</a>
+          <a href="support.html">Support</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow reveal"><span class="dot"></span> Private voice chat for Mac · Coming soon</span>
+      <h1 class="reveal">Have a <span class="grad">yap party</span><br />with your <span class="typer" data-words="local AI,own model,private AI"><span class="typer-text">local AI</span><span class="caret" aria-hidden="true"></span></span></h1>
+      <p class="sub reveal">YapParty is voice chat for the LLM you already run in LM Studio, Ollama or any OpenAI-compatible server. You talk, it answers out loud.</p>
+      <p class="sub reveal">Speech recognition and voices run on your Mac. Your conversations stay there too.</p>
+
+      <div class="cta-row reveal">
+        <!-- No build is published yet. Swap this <button> for the download link at launch. -->
+        <button class="cta cta-download" id="download-cta" type="button"
+                aria-label="Download for Mac, coming soon">
+          <svg class="cta-apple" viewBox="0 0 384 512" width="15" height="20" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          <span class="cta-label">Download for Mac</span>
+          <span class="badge">Coming soon</span>
+        </button>
+        <a class="cta-ghost" href="#how">See how it works <span class="arw">→</span></a>
+      </div>
+      <span class="cta-note reveal">Free. Requires macOS 15 or later, an Apple Silicon Mac and a local LLM server.</span>
+
+      <div class="trust reveal">
+        <span>🔒 Speech runs on your Mac</span>
+        <span>🙅 No account, no tracking</span>
+        <span>📴 Works offline after setup</span>
+        <span>⚡ Built for Apple Silicon</span>
+      </div>
+
+      <div class="hero-art reveal" aria-hidden="true">
+        <span class="ring"></span><span class="ring"></span><span class="ring"></span>
+        <img src="assets/yapparty-icon.png" alt="" width="480" height="480" />
+      </div>
+    </div>
+  </header>
+
+  <!-- How it works -->
+  <section id="how" class="wrap">
+    <div class="section-head">
+      <span class="kicker reveal">Three steps</span>
+      <h2 class="section-title reveal">From quiet model to conversation.</h2>
+      <p class="section-sub reveal">YapParty is the voice. Your LLM server is the brain. Setup takes a few minutes, once.</p>
+    </div>
+    <div class="steps" data-stagger>
+      <div class="step reveal"><h3>Run a local model</h3><p>Open LM Studio or Ollama and load a model you like. Any OpenAI-compatible server works too.</p></div>
+      <div class="step reveal"><h3>Open YapParty</h3><p>Allow the microphone. The first launch downloads about 1.6 GB of speech models, one time.</p></div>
+      <div class="step reveal"><h3>Start talking</h3><p>Hold to talk, or go hands-free. YapParty listens, your model replies, and you hear the answer.</p></div>
+    </div>
+  </section>
+
+  <!-- What happens when you talk -->
+  <section class="wrap">
+    <div class="section-head">
+      <span class="kicker reveal">Where your voice goes</span>
+      <h2 class="section-title reveal">One turn, start to finish.</h2>
+      <p class="section-sub reveal">Here is everything that happens between you speaking and YapParty answering.</p>
+    </div>
+    <div class="flow" data-stagger>
+      <div class="flow-step reveal"><span class="where">On your Mac</span><h3>You speak</h3><p>The mic audio stays in memory. It is never saved to disk.</p></div>
+      <div class="flow-step reveal"><span class="where">On your Mac</span><h3>Transcribed</h3><p>WhisperKit turns your speech into text, on device.</p></div>
+      <div class="flow-step off reveal"><span class="where">Your LLM server</span><h3>Your model replies</h3><p>The text goes to the server you chose: LM Studio, Ollama or another.</p></div>
+      <div class="flow-step reveal"><span class="where">On your Mac</span><h3>Spoken aloud</h3><p>Qwen3-TTS or a macOS voice reads the reply, on device.</p></div>
+    </div>
+    <p class="flow-note reveal">When your LLM server runs on the same Mac, <strong>the whole conversation stays on your Mac.</strong> If you point YapParty at a server on another computer or online, your chat messages go to that server.</p>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="wrap">
+    <div class="section-head">
+      <span class="kicker reveal">What it does</span>
+      <h2 class="section-title reveal">A real conversation, out loud.</h2>
+      <p class="section-sub reveal">Talk or type, listen back, and keep every chat on your own Mac.</p>
+    </div>
+    <div class="features" data-stagger>
+      <div class="feature reveal" style="--fc:var(--c-grape)"><div class="emoji">🎙️</div><h3>Push-to-talk or hands-free</h3><p>Hold to talk, or let it listen, answer aloud and listen again.</p></div>
+      <div class="feature reveal" style="--fc:var(--c-sky)"><div class="emoji">▶️</div><h3>Play any message</h3><p>Every message has a play button, yours included.</p></div>
+      <div class="feature reveal" style="--fc:var(--c-pink)"><div class="emoji">🗣️</div><h3>Neural voices</h3><p>Nine Qwen3-TTS voices that run on your Mac, or any macOS system voice.</p></div>
+      <div class="feature reveal" style="--fc:var(--c-green)"><div class="emoji">🗂️</div><h3>Transcripts on your Mac</h3><p>Browse, search, rename and delete your chats. They never leave the Mac.</p></div>
+      <div class="feature reveal" style="--fc:var(--c-blue)"><div class="emoji">🔌</div><h3>Your server, your model</h3><p>Works with LM Studio, Ollama or any OpenAI-compatible server.</p></div>
+      <div class="feature reveal" style="--fc:var(--c-purple)"><div class="emoji">🙅</div><h3>Nothing phones home</h3><p>No account, no analytics, no telemetry. Just you and your model.</p></div>
+    </div>
+  </section>
+
+  <!-- Free and Pro -->
+  <section id="pro" class="wrap">
+    <div class="section-head">
+      <span class="kicker reveal">Free, with a Pro unlock</span>
+      <h2 class="section-title reveal">Free to yap. Pro to sound like you.</h2>
+      <p class="section-sub reveal">The full voice chat app is free. A one-time Pro unlock adds voice cloning. No subscription.</p>
+    </div>
+    <div class="plans" data-stagger>
+      <div class="feature plan reveal" style="--fc:var(--c-sky)">
+        <div class="emoji">💬</div><h3>YapParty</h3><span class="tag">Free</span>
+        <ul>
+          <li>Voice chat with your local LLM</li>
+          <li>Push-to-talk and hands-free</li>
+          <li>Nine neural voices plus macOS voices</li>
+          <li>Transcripts kept on your Mac</li>
+        </ul>
+      </div>
+      <div class="feature plan reveal" style="--fc:var(--c-grape)">
+        <div class="emoji">🪄</div><h3>YapParty Pro</h3><span class="tag">One-time unlock</span>
+        <ul>
+          <li>Everything in the free app</li>
+          <li>Price to be announced at launch</li>
+          <li>Voice cloning: record a short sample and YapParty answers in that voice</li>
+          <li>Your own voice, or a voice you have the speaker's permission to use. The app asks you to confirm.</li>
+          <li>Voice samples stay on your Mac</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots placeholder -->
+  <section class="wrap">
+    <div class="section-head">
+      <span class="kicker reveal">A look inside</span>
+      <h2 class="section-title reveal">Screenshots are on the way.</h2>
+    </div>
+    <div class="soon reveal">
+      <img src="assets/yapparty-logo.png" alt="" width="72" height="72" />
+      <div>
+        <h3>YapParty is getting ready for launch</h3>
+        <p>Screenshots and a short demo will land here before the first release.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing callout -->
+  <section class="wrap">
+    <div class="callout reveal">
+      <h2>Think out loud, <span class="grad">in private</span>.</h2>
+      <p>Some ideas come easier when you say them. YapParty lets you talk them through with a model you run yourself, with no account, no cloud speech service and no transcript leaving your Mac.</p>
+      <p>Free to use. Pro adds voice cloning as a one-time unlock.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <span class="muted">© 2026 <a href="https://youtube.com/@nomaditsu" target="_blank" rel="noopener noreferrer">Nomaditsu</a> · <a href="https://instagram.com/nomaditsu" target="_blank" rel="noopener noreferrer">Ray de Guzman</a></span>
+      <div class="foot-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <!-- TODO(contact-email): replace with the real support address and a mailto link -->
+        <span class="todo">contact email TBD</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/canvas-confetti.min.js"></script>
+  <script>
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ---- Confetti that drifts as you scroll ---- */
+    var layer = document.querySelector('.confetti');
+    var COLORS = ['#7d0d96', '#3ea2dc', '#e97393', '#9e2fb8', '#2783de', '#46a171', '#e0a93b'];
+    var pieces = [];
+    var span = window.innerHeight + 260;
+
+    function build() {
+      layer.innerHTML = '';
+      pieces = [];
+      var n = window.innerWidth < 760 ? 14 : 26;
+      for (var i = 0; i < n; i++) {
+        var el = document.createElement('span');
+        el.className = 'cf';
+        var dot = document.createElement('i');
+        var w = 7 + Math.random() * 5;
+        dot.style.width = w + 'px';
+        dot.style.height = (w * 2.4) + 'px';
+        dot.style.background = COLORS[i % COLORS.length];
+        dot.style.opacity = (0.16 + Math.random() * 0.22).toFixed(2);
+        dot.style.animationDuration = (4 + Math.random() * 4).toFixed(1) + 's';
+        dot.style.animationDelay = (-Math.random() * 5).toFixed(1) + 's';
+        el.appendChild(dot);
+        el.style.left = (Math.random() * 100).toFixed(2) + '%';
+        layer.appendChild(el);
+        pieces.push({
+          el: el,
+          base: Math.random() * span,
+          speed: 0.10 + Math.random() * 0.42,  // depth: nearer pieces move faster
+          rot: Math.random() * 360,
+          spin: (Math.random() - 0.5) * 0.30
+        });
+      }
+    }
+
+    var bar = document.querySelector('.progress');
+    var topbar = document.querySelector('.topbar');
+    var ticking = false;
+
+    function frame() {
+      var y = window.pageYOffset;
+
+      for (var i = 0; i < pieces.length; i++) {
+        var p = pieces[i];
+        var ty = (((p.base + y * p.speed) % span) + span) % span - 130;
+        p.el.style.transform = 'translate3d(0,' + ty.toFixed(1) + 'px,0) rotate(' + (p.rot + y * p.spin).toFixed(1) + 'deg)';
+      }
+
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+      topbar.classList.toggle('stuck', y > 8);
+
+      ticking = false;
+    }
+
+    function onScroll() {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(frame); }
+    }
+
+    if (!reduce) {
+      build();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', function () { span = window.innerHeight + 260; build(); frame(); });
+      frame();
+    } else {
+      topbar.classList.toggle('stuck', window.pageYOffset > 8);
+    }
+
+    /* ---- Headline word cycle (type / backspace) ---- */
+    var typer = document.querySelector('.typer');
+    if (typer && !reduce) {
+      var words = typer.getAttribute('data-words').split(',');
+      var out = typer.querySelector('.typer-text');
+      var wi = 0, ci = words[0].length, deleting = true;
+
+      var tick = function () {
+        var word = words[wi];
+
+        if (deleting) {
+          ci--;
+          out.textContent = word.slice(0, ci);
+          if (ci <= 0) {
+            deleting = false;
+            wi = (wi + 1) % words.length;
+            typer.classList.remove('typing');
+            return setTimeout(tick, 340);
+          }
+          typer.classList.add('typing');
+          return setTimeout(tick, 38);
+        }
+
+        ci++;
+        out.textContent = word.slice(0, ci);
+        if (ci >= word.length) {
+          deleting = true;
+          typer.classList.remove('typing');
+          return setTimeout(tick, 1750);   // hold the finished word
+        }
+        typer.classList.add('typing');
+        return setTimeout(tick, 62 + Math.random() * 50);
+      };
+
+      setTimeout(tick, 1750);
+    }
+
+    /* ---- Reveal on scroll, staggered within a group ---- */
+    var els = document.querySelectorAll('.reveal');
+    document.querySelectorAll('[data-stagger]').forEach(function (group) {
+      group.querySelectorAll('.reveal').forEach(function (el, i) {
+        el.style.transitionDelay = (i * 70) + 'ms';
+      });
+    });
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+      els.forEach(function (el) { io.observe(el); });
+    } else {
+      els.forEach(function (el) { el.classList.add('in'); });
+    }
+
+    /* ---- Confetti burst on the (coming soon) download button ----
+       Same cannon as the CutParty site, in the two speech-bubble colours. */
+    var dl = document.getElementById('download-cta');
+    if (dl && typeof confetti === 'function') {
+      var APP_COLORS = ['#7D0D96', '#9E2FB8', '#3EA2DC', '#64BDE8', '#E97393'];
+      var slim = confetti.shapeFromPath({ path: 'M0 0 L3 0 L3 10 L0 10 Z' });
+
+      var lastFire = 0;
+      var fire = function () {
+        var now = Date.now();
+        if (now - lastFire < 400) return;
+        lastFire = now;
+
+        var r = dl.getBoundingClientRect();
+        var origin = {
+          x: (r.left + r.width / 2) / window.innerWidth,
+          y: (r.top + r.height / 2) / window.innerHeight
+        };
+        confetti({
+          particleCount: 132,
+          spread: 360,
+          startVelocity: 45,
+          gravity: 1,
+          ticks: 260,
+          scalar: 1.15,
+          colors: APP_COLORS,
+          shapes: [slim],
+          origin: origin,
+          disableForReducedMotion: true
+        });
+      };
+
+      dl.addEventListener('click', fire);
+    }
+
+    /* ---- Cursor spotlight on feature cards ---- */
+    document.querySelectorAll('.feature').forEach(function (card) {
+      card.addEventListener('pointermove', function (e) {
+        var r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
