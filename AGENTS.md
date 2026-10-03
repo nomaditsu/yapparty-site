@@ -1,7 +1,7 @@
 # YapParty site (cutparty.com/yapparty): project brief
 
 Loaded by every AI coding agent after Ray's global constitution
-(`~/dev/clarvis/constitution/AGENTS.md`). If your tool did not load that file on its own,
+(`~/.devsystem/rules/constitution/AGENTS.md`). If your tool did not load that file on its own,
 read it now, before anything else. This file adds what is specific to this repo.
 `CLAUDE.md` is one line that imports this file, so there is a single source.
 
@@ -14,7 +14,7 @@ privacy policy. Static HTML/CSS with no build step. Source is the public repo
 Status: active, pre-launch (the app is not on sale yet).
 
 ## Lineage and related work
-<!-- devsystem:lineage:start (generated from ~/dev/clarvis/registry/projects.yaml by `clarvis index`, do not hand-edit) -->
+<!-- devsystem:lineage:start (generated from ~/.devsystem/rules/registry/projects.yaml by `devsystem index`, do not hand-edit) -->
 Family: voice. Local voice chat with on-device speech
 
 - `~/dev/tokee` (site-for): YapParty (code TOKEE), the macOS app this site sells
@@ -46,11 +46,11 @@ repo may already hold the component, the research, or the reason an approach was
 ## Docs map
 Generated index: `docs/README.md`. Current state and next action: `docs/handoff.md`.
 New docs go in `docs/<type>/` with a kebab-case name and a properties block. Types and
-naming: `~/dev/clarvis/reference/doc-types.md`, `~/dev/clarvis/sops/naming.md`.
+naming: `~/.devsystem/rules/reference/doc-types.md`, `~/.devsystem/rules/sops/naming.md`.
 Read `docs/handoff.md` first, then `README.md` for structure and deploy steps.
 Mockups (HTML prototypes) go in `docs/design/mockups/`, named feature first
-(`{feature}-{what}.html`), each with a `clarvis-mockup:` line in its `<head>`. Their index,
-`docs/design/mockups/README.md`, is generated. Rules: `~/dev/clarvis/reference/doc-types.md`.
+(`{feature}-{what}.html`), each with a `devsystem:mockup` line in its `<head>`. Their index,
+`docs/design/mockups/README.md`, is generated. Rules: `~/.devsystem/rules/reference/doc-types.md`.
 
 ## Guardrails
 - **Product facts come from the app repo, never from memory:** `~/dev/tokee/README.md`,
