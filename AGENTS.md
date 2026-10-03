@@ -14,7 +14,7 @@ privacy policy. Static HTML/CSS with no build step. Source is the public repo
 Status: active, pre-launch (the app is not on sale yet).
 
 ## Lineage and related work
-<!-- clarvis:lineage:start (generated from ~/dev/clarvis/registry/projects.yaml by `clarvis index`, do not hand-edit) -->
+<!-- devsystem:lineage:start (generated from ~/dev/clarvis/registry/projects.yaml by `clarvis index`, do not hand-edit) -->
 Family: voice. Local voice chat with on-device speech
 
 - `~/dev/tokee` (site-for): YapParty (code TOKEE), the macOS app this site sells
@@ -22,7 +22,7 @@ Family: voice. Local voice chat with on-device speech
 - `~/dev/tokee` (Tokee) lists this repo as site-for: yapparty.app marketing site
 
 Full portfolio map: `~/dev/PROJECTS.md`.
-<!-- clarvis:lineage:end -->
+<!-- devsystem:lineage:end -->
 
 Before designing anything new, check the entries above. An earlier prototype or a sibling
 repo may already hold the component, the research, or the reason an approach was dropped.
