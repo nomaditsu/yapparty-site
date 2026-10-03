@@ -2,7 +2,11 @@
 
 Loaded by every AI coding agent after Ray's global constitution
 (`~/.devsystem/rules/constitution/AGENTS.md`). If your tool did not load that file on its own,
-read it now, before anything else. This file adds what is specific to this repo.
+read it now, before anything else. If `~/.devsystem/rules` does not exist (a cloud
+session), clone it first:
+`git clone --depth 1 https://github.com/nomaditsu/devsystem.git ~/.devsystem/rules`.
+If the clone fails, say so once, then work from this file. This file adds what is specific
+to this repo.
 `CLAUDE.md` is one line that imports this file, so there is a single source.
 
 ## Project
