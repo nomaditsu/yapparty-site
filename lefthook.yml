@@ -11,3 +11,15 @@ pre-commit:
     docs-lint:
       priority: 3
       run: ~/.devsystem/rules/scripts/devsystem lint --repo . --staged-only
+    live-checkout:
+      priority: 0
+      run: ~/.devsystem/rules/scripts/guard-branch live
+pre-merge-commit:
+  commands:
+    live-checkout:
+      run: ~/.devsystem/rules/scripts/guard-branch live
+pre-push:
+  commands:
+    default-branch:
+      use_stdin: true
+      run: ~/.devsystem/rules/scripts/guard-branch push
